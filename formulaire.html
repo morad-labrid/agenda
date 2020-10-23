@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d34f22fe3f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="agenda.css">
+    <title>Formulaire l Agenda</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="agenda.html">Accueil</a>
+            <div></div>
+            <a href=""><u>Formulaire</u></a>
+        </nav>
+    </header>
+
+    <main class="formulaire-main">
+        <section>
+            <div>
+                <form action="agenda.html">
+                    <input type="text" name="titre" id="titre" placeholder="Nom de l'evenemnt" required>
+                    <label for="titre"></label>
+                    <input type="text" name="commentaire" id="commentaire" placeholder="Commentaire">
+                    <label for="commentaire"></label>
+
+                    <select name="importance" id="importance" required>
+                        <option value="">Niveau d'importance</option>
+                        <option value="normal">Normal</option>
+                        <option value="moyen">Moyen</option>
+                        <option value="important">Important</option>
+                        <option value="urgent">Urgent</option>
+                    </select>
+
+                    <input type="date" name="date" id="date" required>
+                    <label for="date"></label>
+                    <input type="time" name="heure" id="heure" required>
+                    <label for="heure"></label>
+
+                    <input type="submit" value="Ajouter l'événemnt">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2020 Morad LABRID - Tous droits réservés</p>
+    </footer>
+</body>
+
+</html>

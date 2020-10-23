@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d34f22fe3f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="agenda.css">
+    <title>Accueil l Agenda</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><u>Accueil</u></a>
+            <div></div>
+            <a href="formulaire.html">Formulaire</a>
+        </nav>
+    </header>
+
+    <main class="agenda-main">
+
+        <!-- SIDEBAR -->
+        <section class="sidbar">
+            <div>
+                <p>On est le</p>
+                <h1>Dimanche,<br>18 Octobre</h1>
+            </div>
+            <div class="classement">
+                <p>Normal</p>
+                <p>Moyen</p>
+                <p>Important</p>
+                <p>Urgent</p>
+            </div>
+            <div>
+                <button onclick="window.location.href='formulaire.html';">+ Ajouter un événement</a></button>
+            </div>
+        </section>
+        <!-- FIN SIDEBAR -->
+        <!-- ///////////////////////////////////////////// -->
+        <!-- TABLEAU -->
+        <section class="agenda">
+            <div class="header-agenda">
+                <div>
+                    <h2>Septembre <span>2020</span></h2>
+                </div>
+                <div class="header-agenda-nav">
+                    <button><i class="fas fa-angle-left"></i></button>
+                    <p>Septembre</p>
+                    <button><i class="fas fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div>
+                <table class="days">
+                    <tr>
+                        <td>Lundi</td>
+                        <td>Mardi</td>
+                        <td>Mercredi</td>
+                        <td>Jeudi</td>
+                        <td>Vendredi</td>
+                        <td>Samedi</td>
+                        <td>Dimanche</td>
+                    </tr>
+                </table>
+                <table class="numbers">
+                    <tr>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9
+                            <p class="moyen">manger chez</p>
+                            <p class="urgent">Faire courses</p>
+                        </td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12
+                            <p class="normal">Match de foot</p>
+                        </td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21
+                            <p class="urgent">Exam de maths</p>
+                            <p class="important">RDV Pole emp..</p>
+                        </td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31
+                            <p class="important">RDV Dentiste</p>
+                        </td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+        <!-- FIN TABLEAU -->
+    </main>
+
+    <footer>
+        <p>Copyright © 2020 Morad LABRID - Tous droits réservés</p>
+    </footer>
+</body>
+
+</html>

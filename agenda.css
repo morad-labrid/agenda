@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ee3c48;
+}
+
+header {
+    background-color: #ffffff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212121;
+    margin: 8px 11%;
+    border-radius: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.6s;
+}
+
+header nav a:hover {
+    transform: scale(1.2);
+}
+
+.classement p {
+    margin: 10px 0;
+    text-decoration: underline;
+}
+
+.classement p:nth-child(1) {
+    color: #9c9c9c;
+}
+
+.classement p:nth-child(2) {
+    color: #43d0ff;
+}
+
+.classement p:nth-child(3) {
+    color: #ffba43;
+}
+
+.classement p:nth-child(4) {
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.numbers td {
+    border: 1px solid #ececec;
+    width: 100px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px;
+    transition: 0.6s;
+    vertical-align: top;
+}
+
+.numbers td:hover {
+    color: tomato;
+    cursor: pointer;
+    padding: 8px 2px 8px 16px;
+}
+
+.days td {
+    width: 100px;
+    height: 80px;
+    font-size: 16px;
+    height: 16px;
+    font-weight: lighter;
+}
+
+td .normal,
+td .moyen,
+td .important,
+td .urgent {
+    font-size: 10px;
+    font-weight: lighter;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2px;
+    padding: 2px 1px;
+}
+
+td .normal {
+    background-color: #9c9c9c;
+}
+
+td .moyen {
+    background-color: #43d0ff;
+}
+
+td .important {
+    background-color: #ffba43;
+}
+
+td .urgent {
+    background-color: #ee3c48;
+}
+
+td .normal,
+.moyen,
+.important,
+.urgent {
+    color: black;
+}
+
+.numbers tr:last-child td:nth-child(7) {
+    color: rgba(0, 0, 0, 0.196);
+}
+
+.numbers tr:first-child td:nth-child(1),
+.numbers tr:first-child td:nth-child(2),
+.numbers tr:first-child td:nth-child(3) {
+    color: rgba(0, 0, 0, 0.196);
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h2 span {
+    font-weight: 100;
+}
+
+.header-agenda {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 30px 0;
+}
+
+.header-agenda-nav {
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button {
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: red;
+}
+
+.header-agenda-nav button {
+    border: 1px solid #ececec;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.header-agenda-nav p {
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+}
+
+.agenda-main {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.agenda {
+    border-radius: 0 25px 25px 0;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.sidbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 35px 30px;
+    border-radius: 25px 0 0 25px;
+    background-color: #f6f6f6;
+    border-right: 1px solid #e1e1e1;
+}
+
+.sidbar div:first-child p {
+    margin-bottom: 20px/* pour le text (on est la) */
+    ;
+    color: red;
+}
+
+.sidbar button {
+    background-color: #ececec;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    width: 210px;
+}
+
+footer {
+    background-color: #ffffff;
+    height: 40px;
+    font-weight: lighter;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulaire-main section div form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 115px 0;
+}
+
+.formulaire-main section div input {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    transition: 1s;
+}
+
+.formulaire-main section div input:focus {
+    margin-bottom: 20px;
+    transform: scale(1.2);
+    border-radius: 0;
+    padding: 0 15px;
+    box-shadow: 1px 1px 12px 3px rgba(0, 0, 0, 0.483);
+}
+
+.formulaire-main section div input::placeholder {
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.formulaire-main section div select {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    transition: 1s;
+}
+
+.formulaire-main section div select:focus {
+    margin-bottom: 20px;
+    transform: scale(1.2);
+    border-radius: 0;
+    padding: 0 15px;
+    box-shadow: 1px 1px 12px 3px rgba(0, 0, 0, 0.483);
+}
+
+.formulaire-main input[type=submit] {
+    font-size: 15px;
+    font-weight: ;
+}
+
+.formulaire-main input[type=submit]:hover {
+    font-size: 18px;
+    color: #ee3c48;
+    cursor: pointer;
+}
