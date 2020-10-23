@@ -287,3 +287,33 @@ footer {
     color: #ee3c48;
     cursor: pointer;
 }
+
+@media screen and (max-width: 780px) {
+    .agenda-main {
+        flex-wrap: wrap;
+    }
+    .sidbar {
+        width: 90%;
+        border-radius: 25px 25px 0 0;
+    }
+    .agenda {
+        border-radius: 0 0 25px 25px;
+        width: 90%;
+    }
+    .days tr td {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .numbers tr td {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .days tr td {
+        display: none;
+    }
+    .header-agenda {
+        flex-direction: column;
+    }
+}
